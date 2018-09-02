@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Escrow Release Tool</title>
+  </head>
+  <body>
+    <h1 style="width:90%; margin-left:5%; text-align:center;">Escrow Release Tool provided by SBC</h1>
+    <p style="width:90%; margin-left:5%; text-align:center;">This tool allows you to release any time-based escrow created by <a href="#" onclick="openSite('https://www.secureblockchains.com')">Secure Block Chains</a></p>
+    <p style="width:90%; margin-left:5%; text-align:center;">To use this tool you need 4 simple pieces of information. The Secret Key is required to pay the Network Fee.</p>
+    <ul style="width:90%; margin-left:5%;">
+      <li>The Secret Key to any XRP wallet (Master or Regular). </li>
+      <li>The Public Address that Corresponds to that Secret Key</li>
+      <li>The Transaction Hash of the Escrow you wish to unlock.</li>
+      <li>The Fulfillment ID for the Escrow you wish to unlock. (Or Escrow Password If You Used Harbor + Escrow Password)</li>
+      <li style="margin-right:10%;">(Optional)The default fee the app uses is 5000 drops or 0.005 XRP if your transaction is rejected you can increase this fee. You must enter the fee amount in DROPS. There are 1 Million drops in 1XRP.</li>
+    </ul>
+    <div style="width:50%; margin-left:25%;">
+      <input id="userAddress" placeholder="Address" style="width:100%; height:25px; margin-bottom:20px;"/>
+      <input id="userSecret" placeholder="Secret Key" style="width:100%; height:25px; margin-bottom:20px;"/>
+      <input id="userHash" placeholder="Transaction Hash for Escrow" style="width:100%; height:25px; margin-bottom:20px;"/>
+      <input id="userFulfillment" placeholder="Fulfillment ID or Password for Escrow" style="width:100%; height:25px; margin-bottom:20px;"/>
+      <input id="userSelectedFee" placeholder="Choose a custom fee in drops (Optional)" style="width:100%; height:25px; margin-bottom:20px;" type="number"/>
+      <button id="submitData" style="height:25px; margin-bottom:20px;">Release Escrow</button>
+    </div>
+    
+    <div id="resultDiv" style="width:90%; margin-left:5%; display:none;">
+      <p id="resultText" style="text-align:center;"></p>
+    </div>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+      
+    </script>
+    <script type="text/javascript" src="js/escrowRelease.js"></script>
+    <script type="text/javascript" src="js/userData.js"></script>
+  </body>
+</html>

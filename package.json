@@ -1,0 +1,49 @@
+{
+  "name": "escrow-release-tool",
+  "version": "1.0.0",
+  "description": "SBC Escrow Release Tool",
+  "main": "main.js",
+  "repository": "https://github.com/SecureBlockChains/EscrowReleaseTool",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build",
+    "ship": "build -p always"
+  },
+  "author": "Secure Block Chains LLC <contact@secureblockchains.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^2.0.7",
+    "electron-builder": "^20.0.4"
+  },
+  "build": {
+    "appId": "com.EscrowRelease.sbc",
+    "productName": "SBC Escrow Release Tool",
+    "mac": {
+      "category": "com.bpjs.demo",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "build/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "publish": {
+      "provider": "github"
+    }
+  },
+  "dependencies": {
+    "ajv": "^6.5.3",
+    "electron-context-menu": "^0.9.1",
+    "electron-log": "^2.2.14",
+    "electron-reload": "^1.2.2",
+    "electron-save-file": "^1.0.2",
+    "electron-store": "^1.3.0",
+    "electron-updater": "^3.0.3",
+    "five-bells-condition": "^5.0.1",
+    "ripple-keypairs": "^0.10.1",
+    "ripple-sign-keypairs": "^1.0.2"
+  }
+}
