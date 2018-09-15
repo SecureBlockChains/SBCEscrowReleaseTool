@@ -9,9 +9,9 @@ This application creates a transaction blob that is transmitted to Ripple's publ
 This app is open source so feel free to inspect the code and provide feedback.
 
 ## Download SBC's Escrow Release Tool for Windows or OSX Below!
-[Escrow Release Tool for Windows](https://www.google.com "Escrow Release for Windows")
+[Escrow Release Tool for Windows](https://github.com/SecureBlockChains/SBCEscrowReleaseTool/releases/download/1.0.0/SBC.Escrow.Release.Tool.Setup.1.0.0.exe "Escrow Release for Windows")
 
-[Escrow Release Tool for OSX](https://www.google.com "Escrow Release for Windows")
+[Escrow Release Tool for OSX](https://github.com/SecureBlockChains/SBCEscrowReleaseTool/releases/download/1.0.0/SBC.Escrow.Release.Tool-1.0.0.dmg "Escrow Release for Windows")
 
 
 ### Customizing
